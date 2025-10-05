@@ -1,11 +1,11 @@
 @font-face {
     font-family: Nothing;
-    src: url(./Ndot-55-DoenNkNm.ttf);
+    src: url(./Fonts/Ndot-55-DoenNkNm.ttf);
 }
 
 @font-face {
     font-family: one;
-    src: url(./korataki-rg-3cf0d889.ttf);
+    src: url(./Fonts/korataki-rg-3cf0d889.ttf);
 }
 
 *{
