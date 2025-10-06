@@ -164,8 +164,8 @@ html, body {
     display: flex;
     justify-content: center;
     /* padding: 60px; */
-    align-items: center;
-    width: 39%;
+    align-items:self-start;
+    width: 37%;
     /* background-color: skyblue; */
 
 }
