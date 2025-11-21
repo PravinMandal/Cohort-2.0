@@ -13,6 +13,6 @@ img.addEventListener('dblclick', function() {
     }, 1000);
     setTimeout(() => {
         love.style.transform = 'translate(-50%, -50%) scale(0) rotate(-60deg)'
-    }, 1200);
+    }, 1200); 
     
 })
