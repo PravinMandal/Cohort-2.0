@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes bganimation {
+    from {
+        scale: 1;
+        border-radius: 20px;
+    }
+    to {
+        scale: 0.75;
+        border-radius: 50%;
+    }
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #box {
+        width: 30rem;
+        height: 30rem;
+        background-color: white;
+        background-image: conic-gradient(from 15deg, red, green, blue, red);
+        box-shadow: 15px 15px 40px white;
+        animation: bganimation 3s infinite alternate;
+    }
+}
