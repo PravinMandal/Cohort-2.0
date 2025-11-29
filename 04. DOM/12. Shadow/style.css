@@ -44,6 +44,7 @@ main #box {
   border-radius: 1rem;
   background: linear-gradient(black) padding-box, conic-gradient(from var(--rotate), black, rgb(45, 174, 174), rgb(255, 215, 0), black) border-box;
   animation: borderAnimation 4s linear infinite;
+  animation-play-state: paused;
   transition: all 0.3s ease;
 }
 main #box img {
@@ -64,6 +65,7 @@ main #box p {
 }
 main #box:hover {
   border-width: 5px;
+  animation-play-state: running;
   color: rgb(33, 233, 233);
   text-shadow: 0 0 10px rgb(243, 15, 72);
   box-shadow: 0 0 80px rgb(255, 215, 0);
