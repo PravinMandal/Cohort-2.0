@@ -17,10 +17,10 @@ html, body {
 
 @keyframes borderAnimation {
     from {
-        --rotate : 0turn;
+        --rotate : 0deg;
     }
     to {
-        --rotate : 1turn;
+        --rotate : 360deg;
     }
 }
 
@@ -40,15 +40,16 @@ main {
         align-items: center;
         color: whitesmoke;
         flex-direction: column;
-        border: 7px solid rgba(0, 0, 0, 0);
-        box-shadow: 0 0 80px rgb(255, 215, 0);
+        border: 0px solid rgba(0, 0, 0, 0);
+        box-shadow: 0 0 0 aqua;
+        text-shadow: 0 0 20px rgb(255, 215, 0);
         border-radius: 1rem;
         background: 
-            linear-gradient(black) padding-box,
-            conic-gradient(from var(--rotate), black,rgb(45, 174, 174), rgb(255, 215, 0), black, black, black) border-box
+        linear-gradient(black) padding-box,
+        conic-gradient(from var(--rotate), black,rgb(45, 174, 174), rgb(255, 215, 0), black) border-box
         ;
-        animation: borderAnimation 2s linear infinite;
-        transition: transform 0.3s ease;
+        animation: borderAnimation 4s linear infinite;
+        transition: all 0.3s ease;
         img {
             height: 100%;
             width: 100%;
@@ -66,7 +67,9 @@ main {
         }
     }
     #box:hover {
-        transform: scale(0.95);
+        border-width: 5px;
         color: rgb(33, 233, 233);
+        text-shadow: 0 0 10px rgb(243, 15, 72);
+        box-shadow: 0 0 80px rgb(255, 215, 0);
     }
 }
